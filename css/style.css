@@ -41,10 +41,10 @@ body {
 
 .header {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background: #666666 url(../img/banner-mobile.jpg);
-  background-position: 0 0;
+  background-image: url(../img/banner-mobile.jpg);
+  background-color: #666666 ;
   background-size: cover;
   z-index: 1;
 
@@ -55,23 +55,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .header {
-    background: #666666 url(../img/banner-bg-tablet.jpg);
-    height: 60vmax;
-    justify-content: flex-start;
-    padding-top: 3rem;
-  }
-}
 
-@media (min-width: 1200px) and (orientation: landscape), (min-height: 1200px) {
-  .header {
-    background: #666666 url(../img/banner-bg.jpg);
-    height: 38vmax;
-    padding-top: 3rem;
-    justify-content:flex-start;
-  }
-}
 
 .header::before {
   content: "";
@@ -96,85 +80,17 @@ body {
   z-index: 10;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .header__navigation {
-    width: 91%;
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-  }
-}
-
-@media (min-width: 1200px) {
-}
-
 .header__logo {
-
   margin-right: 12.5%;
   width: 75vw;
   min-width: 75vw;
   max-width: 75vw;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .header__logo {
-    min-width: 10rem;
-    max-width: 10rem;
-
-  }
-}
-
-@media (min-width: 1200px) {
-  .header__logo{
-    min-width: 11.25rem;
-    max-width: 11.25rem;
-  }
-
-  .menu__button {
-    display: none;
-  }
-}
-
 .navbar {
   display: flex;
   align-items: flex-end;
   max-width: 100%;
-}
-
-@media (max-width: 1199px), (orientation: landscape) {
-  .navbar {
-    display: none;
-  }
-
-  .menu__button {
-    display: flex; 
-    align-items: center;  
-    cursor: pointer;
-    width: 3rem;
-    margin-top: 2rem;
-    z-index: 4;
-    
-    position: absolute;
-    right: 5%;
-    top: 5%;
-  }
-  
-  .menu__button > span,
-  .menu__button > span::before,
-  .menu__button > span::after {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 5px;
-    background-color: #ffffff;
-  }
-  .menu__button > span::before {
-    content: '';
-    top: -13px;
-  }
-  .menu__button > span::after {
-    content: '';
-    top: 8px;
-  }
 }
 
 .navbar__item {
@@ -213,25 +129,6 @@ body {
   font-size: 1.625rem;
   line-height: 1.385;
   margin: 0 1rem;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .header__headline_text {
-    font-size: 2.5rem;
-    line-height: 1.375;
-    margin-top: 100px;
-    margin-left: 2.2rem;
-    margin-right: 2.2rem;
-  }
-}
-
-@media (min-width: 1200px){
-  .header__headline_text {
-    font-size: 2.875rem;
-    line-height: 1.2;
-    margin-left: 2.2rem;
-    margin-right: 2.2rem;
-  }
 }
 
 .trends {
@@ -279,64 +176,7 @@ body {
   align-items: center;
 }
 
-@media (orientation: landscape) {
-  .trends__block {
-    flex-direction: row;
-    justify-content: flex-start;
-    }
-}
-@media (max-width: 767px) and (orientation: landscape) {
-  .header__logo {
-    margin-top: 5rem;
-  }
 
-  .header__headline {
-    margin-top: 2rem;
-  }
-
-  .trends__item {
-  width: calc(50% - 1px);
-  }
-
-  .trends__item:nth-child(even) {
-    margin-left: 1px;
-    align-self: flex-end;
-  }
-  
-  .trends__item:nth-child(odd) {
-    margin-right: 1px;
-  }
-}
-
-@media (min-width: 768px) and (orientation: portrait){
-  .trends__item {
-    width: calc(50% - 1px);
-    }
-  
-    .trends__item:nth-child(even) {
-      margin-left: 1px;
-      align-self: flex-end;
-    }
-    
-    .trends__item:nth-child(odd) {
-      margin-right: 1px;
-    }
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-  .header__headline {
-    margin-top: 8rem;
-  }
-
-  .trends__block {
-    flex-direction: row;
-    justify-content: space-between;
-    }
-    
-    .trends__item {
-    width: calc(25% - 1px);
-    }
-}
 
 
 
@@ -485,24 +325,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .page {
-    flex-direction: row;
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
-    width: 100%;
-  }
 
-  .main {
-    width: 100%;
-    margin-right: 1.125rem;
-  }
-
-  .aside {
-    width: 80%;
-    margin-left: 1.125rem;
-  }
-}
 
 .section {
   margin: 60px 0 60px;
@@ -681,16 +504,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 1rem;
   width: 100%;
 }
 
 .products__item {
-
   position: relative;
   width: 100%;
   margin-right: 4%;
 }
+
 
 .products__item:nth-last-child(1) {
   margin-right: 0;
@@ -832,3 +655,216 @@ address {
 }
 
 /*------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    background-image: url(../img/banner-bg-tablet.jpg);
+    background-color: #666666 ;
+    background-size: cover;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+
+  .header__navigation {
+    align-self: flex-start;
+    width:80%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+  }
+
+  .header__logo {
+    min-width: 10rem;
+    max-width: 10rem;
+  }
+
+  .header__headline_text {
+    font-size: 2.5rem;
+    line-height: 1.375;
+    margin-top: 100px;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: 48%;
+  }
+  .products__item:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape), (min-height: 1200px) {
+  .header {
+    background-image: url(../img/banner-bg.jpg);
+    background-color: #666666 ;
+    background-size: cover;
+    height: 28.125rem;
+    padding-top: 3rem;
+    justify-content:flex-start;
+  }
+}
+
+@media (max-width: 1199px), (orientation: landscape) {
+  
+  
+  .navbar {
+    display: none;
+  }
+
+  .menu__button {
+    display: flex; 
+    align-items: center;  
+    cursor: pointer;
+    height: 25px;
+    width: 3rem;
+    margin-top: 2rem;
+    z-index: 4;
+    
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+  
+  .menu__button > span,
+  .menu__button > span::before,
+  .menu__button > span::after {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .menu__button > span::before {
+    content: '';
+    top: -13px;
+  }
+  .menu__button > span::after {
+    content: '';
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo{
+    min-width: 11.25rem;
+    max-width: 11.25rem;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+  }
+
+  .menu__button {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px){
+  .header__headline_text {
+    font-size: 2.875rem;
+    line-height: 1.2;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+
+  .page {
+    width: 75rem;
+    margin: auto;
+  }
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: 29.333%;
+  }
+  .products__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  .trends__block {
+    flex-direction: row;
+    justify-content: flex-start;
+    }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .header__logo {
+    margin-top: 5rem;
+  }
+
+  .header__headline {
+    margin-top: 2rem;
+  }
+
+  .trends__item {
+  width: calc(50% - 1px);
+  }
+
+  .trends__item:nth-child(even) {
+    margin-left: 1px;
+    align-self: flex-end;
+  }
+  
+  .trends__item:nth-child(odd) {
+    margin-right: 1px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait){
+  .trends__item {
+    width: calc(50% - 1px);
+    }
+  
+    .trends__item:nth-child(even) {
+      margin-left: 1px;
+      align-self: flex-end;
+    }
+    
+    .trends__item:nth-child(odd) {
+      margin-right: 1px;
+    }
+}
+
+@media  (min-width: 768px) and (orientation: landscape) {
+  .header__headline {
+    margin-top: 8rem;
+  }
+
+  .trends__block {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
+    .trends__item {
+    width: calc(25% - 1px);
+    }
+}
+
+@media (min-width: 768px) {
+  .page {
+    flex-direction: row;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    margin-right: 1.125rem;
+  }
+
+  .aside {
+    width: 80%;
+    margin-left: 1.125rem;
+  }
+}
