@@ -10,6 +10,36 @@
 </head>
 
 <body>
+  <!-- POPUP  -->
+  <div class="popup-hidden">
+    <section class="section popup__section">
+      <div class="headline section__headline">Ваш фидбек</div>
+      <a class="close-button" href="#">&times</a>
+      <form>
+      <p class="popup__text">Как часто вы заходите на сайт?</p>
+      <select class="select" placeholder="Почти каждый день">
+        <option>Ежедневно</option>
+        <option>Почти каждый день</option>
+        <option>Раз в неделю</option>
+        <option>Очень редко</option>
+      </select>
+      <p class="popup__text">Вы подписаны на e-mail рассылку?</p>
+      
+      <input type="radio" class="radio" id="radio-yes" value="Да" checked>
+        <label class="radio__label" for="radio-yes">Да</label>
+        
+        <input type="radio" class="radio" id="radio-no" value="Да">
+        <label class="radio__label" for="radio-no">Нет</label>
+      
+      
+      <p class="popup__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+        <textarea class="popup__textarea" placeholder="Может, больше рецептов?"></textarea>
+  <!--   Исправить класс     -->
+        <button class="email__submit" type="submit" name="submit">Отправить</button>
+        </form>
+    </section>
+  </div>
+  <!-- POPUP END -->
 
   <header class="header">
     <div class="menu__button">

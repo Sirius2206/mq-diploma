@@ -39,6 +39,83 @@ body {
 }
 
 
+/* POPUP */
+.popup-hidden {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    padding-top: 2rem;
+
+    display: none;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -0.5rem;
+    right: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: -1;
+  }
+  
+  .popup__section {
+    padding: 2rem;
+    background: white;
+    margin: 1rem;
+    
+  }
+  
+  .popup body{
+    background-color: black;
+  }
+  
+  .popup__text {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .select {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+  
+    background-color: #f4f7f6;
+    color: #808080;
+    border: none;
+    font-size: 13px;
+    font-family: inherit;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .radio__label {
+    margin-right: 3rem;
+  }
+  
+  .popup__textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    background-color: #f4f7f6;
+    color: #808080;
+    border: none;
+    font-size: 13px;
+    font-family: inherit;
+    resize: none;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  /* POPUP END */
+  
 .header {
   position: relative;
   width: 100vw;
@@ -586,7 +663,7 @@ address {
   display: flex;
   justify-content: center;
   margin: 12px auto 70px;
-  padding: 0 15px;
+  padding: 0 1rem;
   width: 100%;
 
 }
@@ -679,7 +756,7 @@ address {
   .header__headline_text {
     font-size: 2.5rem;
     line-height: 1.375;
-    margin-top: 100px;
+    margin-top: 30vh;
     margin-left: 2.2rem;
     margin-right: 2.2rem;
   }
@@ -694,6 +771,25 @@ address {
   }
   .products__item:nth-child(even) {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .page {
+    flex-direction: row;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    margin-right: 1.125rem;
+  }
+
+  .aside {
+    width: 80%;
+    margin-left: 1.125rem;
   }
 }
 
@@ -850,21 +946,3 @@ address {
     }
 }
 
-@media (min-width: 768px) {
-  .page {
-    flex-direction: row;
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
-    width: 100%;
-  }
-
-  .main {
-    width: 100%;
-    margin-right: 1.125rem;
-  }
-
-  .aside {
-    width: 80%;
-    margin-left: 1.125rem;
-  }
-}
