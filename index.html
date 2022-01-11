@@ -12,31 +12,31 @@
 <body>
   <!-- POPUP  -->
   <div class="popup-hidden">
-    <section class="section popup__section">
+    <section class="popup__section">
       <div class="headline section__headline">Ваш фидбек</div>
       <a class="close-button" href="#">&times</a>
       <form>
-      <p class="popup__text">Как часто вы заходите на сайт?</p>
-      <select class="select" placeholder="Почти каждый день">
-        <option>Ежедневно</option>
-        <option>Почти каждый день</option>
-        <option>Раз в неделю</option>
-        <option>Очень редко</option>
-      </select>
-      <p class="popup__text">Вы подписаны на e-mail рассылку?</p>
-      
-      <input type="radio" class="radio" id="radio-yes" value="Да" checked>
-        <label class="radio__label" for="radio-yes">Да</label>
-        
-        <input type="radio" class="radio" id="radio-no" value="Да">
-        <label class="radio__label" for="radio-no">Нет</label>
-      
-      
-      <p class="popup__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+        <p class="popup__text">Как часто вы заходите на сайт?</p>
+        <select class="select" placeholder="Почти каждый день">
+          <option>Почти каждый день</option>
+          <option>Раз в несколько дней</option>
+          <option>Раз в несколько недель</option>
+          <option>Несколько раз в год</option>
+        </select>
+        <p class="popup__text">Вы подписаны на e-mail рассылку?</p>
+
+        <input type="radio" class="radio radio_yes" name="email" id="radio-yes" value="Да">
+        <label class="radio__label radio__label_yes" for="radio-yes">Да</label>
+
+        <input type="radio" class="radio radio_no" name="email" id="radio-no" value="Да">
+        <label class="radio__label radio__label_no" for="radio-no">Нет</label>
+
+
+        <p class="popup__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
         <textarea class="popup__textarea" placeholder="Может, больше рецептов?"></textarea>
-  <!--   Исправить класс     -->
-        <button class="email__submit" type="submit" name="submit">Отправить</button>
-        </form>
+        <!--   Исправить класс     -->
+        <button class="popup__submit" type="submit" name="submit">Отправить</button>
+      </form>
     </section>
   </div>
   <!-- POPUP END -->
@@ -206,8 +206,7 @@
       </article>
 
       <article class="article main__article">
-        <img src="img/last-post4.jpg" class="article__image"
-          alt="Накрытый стол для обеда">
+        <img src="img/last-post4.jpg" class="article__image" alt="Накрытый стол для обеда">
         <div class="article__content">
           <ul class="tags">
             <li><a class="article__tag" href="#0">Lifestyle</a></li>
@@ -402,14 +401,14 @@
       </div>
       <div class="products__item">
         <header class="products__image">
-          <picture > 
+          <picture>
             <source media="(min-width:768px) and (max-width:1199px)" srcset="img/shop-item-tablet3.jpg">
             <source media="(min-width:1200px)" srcset="img/shop-item-desk3.jpg">
             <img src="img/shop-item-mobile3.jpg" alt="Шестиугольная рамка">
           </picture>
         </header>
         <div class="products__border">
-        <div class="products__text">
+          <div class="products__text">
             <h4 class="headline products__headline">Шестиугольная рамка</h4>
             <p>Необычная рамка для украшения дома из видео <a class="text__link" href="#0">«Как сделать рамку из
                 подручных
