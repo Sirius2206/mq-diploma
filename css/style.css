@@ -948,7 +948,6 @@ address {
   
     .trends__item:nth-child(even) {
       margin-left: 1px;
-      align-self: flex-end;
     }
     
     .trends__item:nth-child(odd) {
@@ -990,6 +989,10 @@ address {
     line-height: 1.2;
     margin: 10rem 2.2rem 0;
   }
+
+  .trends__item{
+    width: calc(25% - 1px);
+    }
 
   .page {
     width: 75rem;
