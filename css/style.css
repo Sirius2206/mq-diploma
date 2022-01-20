@@ -390,6 +390,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -472,10 +474,12 @@ body {
 }
 
 .thumbnail {
+  align-self: center;
   min-width: 70px;
   max-width: 70px;
   background: #f4f7f6;
   font-size: 10px;
+  object-fit: none;
 }
 
 .article__content_small {
@@ -839,7 +843,8 @@ address {
   }
 
   .aside {
-    width: 80%;
+    min-width: 25%;
+    max-width: 25%;
     margin-left: 1.125rem;
   }
 }
@@ -859,31 +864,13 @@ address {
     cursor: pointer;
     height: 25px;
     width: 3rem;
-    margin-top: 2rem;
     z-index: 4;
+    color: #ffffff;
+    font-size: 3rem;
     
     position: absolute;
     right: 5%;
-    top: 5%;
-  }
-  
-  .menu__button > span,
-  .menu__button > span::before,
-  .menu__button > span::after {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 5px;
-    background-color: #ffffff;
-    cursor: pointer;
-  }
-  .menu__button > span::before {
-    content: '';
-    top: -13px;
-  }
-  .menu__button > span::after {
-    content: '';
-    top: 8px;
+    top: 5.5%;
   }
 }
 
@@ -955,7 +942,7 @@ address {
     }
 }
 
-@media (min-device-width: 1200px){
+@media (min-width: 1200px){
   .header {
     background-image: url(../img/banner-bg.jpg);
     background-color: #666666 ;
@@ -993,12 +980,7 @@ address {
   .trends__item{
     width: calc(25% - 1px);
     }
-
-  .page {
-    width: 75rem;
-    margin: auto;
-  }
-
+    
   .products {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1014,45 +996,3 @@ address {
 }
 
 
-/* @media screen and (min-width: 1200px) {
-  .header__logo{
-    min-width: 11.25rem;
-    max-width: 11.25rem;
-  }
-
-  .navbar {
-    display: flex;
-    align-items: flex-end;
-    max-width: 100%;
-  }
-
-  .menu__button {
-    display: none;
-  }
-} */
-
-/* @media (min-device-width: 1200px){
-  .header__headline_text {
-    font-size: 2.875rem;
-    line-height: 1.2;
-    margin: 10rem 2.2rem 0;
-  }
-
-  .page {
-    width: 75rem;
-    margin: auto;
-  }
-
-  .products {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .products__item {
-    width: 29.333%;
-  }
-
-  .products__item:nth-child(3n) {
-    margin-right: 0;
-  }
-} */
