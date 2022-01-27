@@ -301,7 +301,11 @@ input[type=radio]:checked:before{
   aspect-ratio: 4/2;
   display: flex;
   align-items: flex-end;
+  margin-right: 1px;
+}
 
+.trends__item:nth-last-child() {
+  margin-right: 0;
 }
 
 .trends__darken:after {
@@ -845,6 +849,7 @@ address {
 
   .trends__item {
     width: calc(50% - 1px);
+    margin-right: 0;
   }
 
   @media (orientation: landscape) {
@@ -946,7 +951,6 @@ address {
 
   .trends__item:nth-child(even) {
     margin-left: 1px;
-    align-self: flex-end;
   }
 
   .trends__item:nth-child(odd) {
