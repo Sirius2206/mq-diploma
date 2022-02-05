@@ -423,6 +423,12 @@ input[type=radio]:checked:before{
   margin-top: 0;
 }
 
+.main__article:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .article__image {
   width: 100%;
   background: #eff6f1;
