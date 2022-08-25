@@ -1026,7 +1026,7 @@ address {
   }
 
   .trends__item{
-    width: calc(25% - 1px);
+    width: calc(25% - 2px);
   }
 
   .page {
